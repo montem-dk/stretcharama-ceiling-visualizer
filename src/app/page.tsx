@@ -197,16 +197,6 @@ export default function UploadPage() {
                 {isUploading ? "Uploading..." : "Continue to Color Selection"}
                 {!isUploading && <span className="ml-2">→</span>}
               </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => router.push("/admin")}
-                data-testid="button-admin"
-              >
-                <Settings className="mr-2 h-4 w-4" />
-                Admin Panel
-              </Button>
             </div>
           </div>
         </div>

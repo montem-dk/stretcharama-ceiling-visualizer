@@ -5,14 +5,14 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  // ✅ Added: cursor-pointer, border-transparent default, smoother hover
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 cursor-pointer border border-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  // base styles
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 cursor-pointer border border-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:bg-gray-300 disabled:text-background disabled:border-transparent disabled:shadow-none disabled:cursor-default [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        // ✅ Default now has a LIGHT BORDER + hover bg + hover border
+        // ACTIVE state: dark primary (navy-ish), white text
         default:
-          "bg-primary text-primary-foreground border-border hover:bg-primary/90 hover:border-foreground/20",
+          "bg-blue-900 text-background border-border hover:bg-primary/90 hover:border-foreground/20",
 
         destructive:
           "bg-destructive text-destructive-foreground border-border hover:bg-destructive/90 hover:border-destructive",

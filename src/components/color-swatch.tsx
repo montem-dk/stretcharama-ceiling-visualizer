@@ -33,7 +33,7 @@ export function ColorSwatch({ color, name, selected, onClick }: ColorSwatchProps
         className={cn(
           "w-full aspect-square border-2 rounded-xl shadow-sm hover:shadow-md transition-all mb-2",
           bgClass,
-          selected ? "border-accent ring-4 ring-accent/20" : "border-border"
+          selected ? "border-accent ring-2 ring-accent/20" : "border-border"
         )}
       />
       <p className="text-center text-sm font-medium text-foreground">{name}</p>

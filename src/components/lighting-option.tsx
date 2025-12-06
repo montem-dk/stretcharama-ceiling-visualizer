@@ -85,7 +85,7 @@ export function LightingOption({
         "cursor-pointer flex flex-col gap-3",
         "hover:border-foreground/80 hover:shadow-md hover:-translate-y-0.5",
         selected
-          ? "border-foreground shadow-lg"
+          ? "border-accent ring-2 ring-accent/20"
           : "border-border"
       )}
       data-testid={`lighting-${key.replace(/\s+/g, "-")}`}
@@ -106,14 +106,6 @@ export function LightingOption({
       <p className="text-xs md:text-sm text-muted-foreground leading-snug">
         {config.description}
       </p>
-
-      {selected && (
-        <div className="flex items-center justify-end">
-          <span className="inline-flex items-center rounded-full border border-foreground px-2 py-0.5 text-[10px] uppercase tracking-wide text-foreground">
-            Selected
-          </span>
-        </div>
-      )}
     </button>
   );
 }

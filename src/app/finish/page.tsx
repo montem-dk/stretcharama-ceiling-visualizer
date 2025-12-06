@@ -73,7 +73,7 @@ export default function FinishPage() {
                 className={cn(
                   "cursor-pointer transition-all border-2",
                   state.selectedFinish === finish
-                    ? "border-primary bg-primary/5 shadow-lg"
+                    ? "border-accent ring-2 ring-accent/20"
                     : "border-border hover:border-primary/50 hover:shadow-md"
                 )}
                 onClick={() => setFinish(finish)}
@@ -92,11 +92,6 @@ export default function FinishPage() {
                   <h3 className="text-xl font-semibold text-foreground mb-2">
                     {finish}
                   </h3>
-                  {state.selectedFinish === finish && (
-                    <Badge variant="default" className="mt-2">
-                      Selected
-                    </Badge>
-                  )}
                 </CardContent>
               </Card>
             ))}

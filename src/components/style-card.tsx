@@ -12,7 +12,7 @@ export function StyleCard({ style, selected, onClick }: StyleCardProps) {
     <div
       className={cn(
         "style-card cursor-pointer bg-card rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1",
-        selected && "ring-4 ring-accent"
+        selected && "ring-2 ring-accent"
       )}
       onClick={onClick}
       data-testid={`style-${style.styleId}`}

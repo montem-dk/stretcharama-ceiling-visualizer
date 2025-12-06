@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import type { Style } from "@/types/style";
+import type { Style } from "@/app/types/style";
 
 interface StyleCardProps {
   style: Style;

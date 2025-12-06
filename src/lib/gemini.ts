@@ -1,6 +1,6 @@
 // lib/gemini.ts
 import { GoogleGenAI, Modality } from "@google/genai";
-import type { Style } from "@/types/style";
+import type { Style } from "@/app/types/style";
 
 const apiKey =
   process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY || "";

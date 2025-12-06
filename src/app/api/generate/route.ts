@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import { supabaseServer, SUPABASE_BUCKET } from "@/lib/supabase-server";
 import { generateCeilingDesign } from "@/lib/gemini";
-import type { Style } from "@/types/style";
+import type { Style } from "@/app/types/style";
 
 export const runtime = "nodejs"; // ensure Node runtime for Buffer/@google/genai
 

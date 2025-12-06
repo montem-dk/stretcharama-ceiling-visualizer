@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Badge } from "@/components/ui/badge";
 import { Wand2, Filter } from "lucide-react";
-import type { Style } from "@/types/style";
+import type { Style } from "@/app/types/style";
 
 export default function DesignSelectionPage() {
   const router = useRouter();
